@@ -1,0 +1,28 @@
+{
+  "name": "virginity",
+  "version": "0.0.1",
+  "description": "A module for creating vendor-agnostic vcard contact files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mplno/virginity.git"
+  },
+  "keywords": [
+    "vcard",
+    "contacts",
+    "vcs"
+  ],
+  "author": "Michael Polino <mrpolino@gmail.com> (https://github.com/mplno)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mplno/virginity/issues"
+  },
+  "homepage": "https://github.com/mplno/virginity",
+  "devDependencies": {
+    "tap-spec": "^2.2.1",
+    "tape": "^3.5.0"
+  }
+}
