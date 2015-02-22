@@ -1,6 +1,6 @@
 {
   "name": "virginity",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A module for creating vendor-agnostic vcard contact files.",
   "main": "index.js",
   "scripts": {
