@@ -29,3 +29,6 @@ node_modules
 
 # example files that get generated
 examples/*.vcf
+
+# Generated files
+dist/

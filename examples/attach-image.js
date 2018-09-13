@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-var compile = require('../');
+var compile = require('../dist/src').compile;
 
 // some basic contact info for a friend, Billy
 var contact = {

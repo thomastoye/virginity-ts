@@ -1,10 +1,12 @@
 {
-  "name": "virginity",
+  "name": "virginity-ts",
   "version": "0.1.0",
-  "description": "Create vendor-agnostic vcard contact files.",
-  "main": "index.js",
+  "description": "Create vendor-agnostic vcard contact files - virginity TypeScript fork.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "test": "node test/index.js"
+    "test": "mocha -r ts-node/register test/**/*.spec.ts",
+    "build": "rm -rf dist; tsc"
   },
   "repository": {
     "type": "git",
@@ -16,13 +18,26 @@
     "vcs"
   ],
   "author": "Michael Polino <mrpolino@gmail.com> (https://github.com/mplno)",
+  "contributors": [
+    {
+      "name": "Thomas Toye",
+      "url": "https://thomas.toye.io"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mplno/virginity/issues"
+    "url": "https://github.com/thomastoye/virginity-ts/issues"
   },
-  "homepage": "https://github.com/mplno/virginity",
+  "homepage": "https://github.com/thomastoye/virginity-ts",
   "devDependencies": {
-    "tap-spec": "^2.2.1",
-    "tape": "^3.5.0"
+    "@types/chai": "^4.1.4",
+    "@types/lodash.isstring": "^4.0.4",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
   }
 }

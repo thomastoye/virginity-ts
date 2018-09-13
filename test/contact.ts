@@ -1,4 +1,4 @@
-var contact = {
+export const contact = {
 	name: {
 		first: 'Michael',
 		additional: ['Robert'],
@@ -58,5 +58,3 @@ var contact = {
 		name: 'mrpolino'
 	}]
 };
-
-module.exports = contact;
