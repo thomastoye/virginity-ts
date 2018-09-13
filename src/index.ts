@@ -18,7 +18,7 @@ interface ContactFormat {
     photo?: { type: 'uri' | 'base64' | string, ext: string, photo: string };
     tel?: ReadonlyArray<{ type: 'cell' | 'home' | 'work' | string, pref?: boolean, number: string }>;
     url?: ReadonlyArray<{ type?: string, url: string }>;
-    im: ReadonlyArray<{ type: 'yahoo' | 'google' | 'aim' | 'skype' | 'qq' | 'msn' | 'icq' | 'jabber' | string, name: string }>;
+    im?: ReadonlyArray<{ type: 'yahoo' | 'google' | 'aim' | 'skype' | 'qq' | 'msn' | 'icq' | 'jabber' | string, name: string }>;
 }
 
 export const compile = (data: ContactFormat) => {
